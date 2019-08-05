@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=BubbleSort
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/mms/Documents/NewWorkspace/programming_learn/learn
-ProjectPath            :=C:/Users/mms/Documents/NewWorkspace/programming_learn/learn/BubbleSort
+WorkspacePath          :=D:/Documentos/Pessoal/github/programming_learn/learn
+ProjectPath            :=D:/Documentos/Pessoal/github/programming_learn/learn/BubbleSort
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=mms
-Date                   :=01/08/2019
+User                   :=mateus.gagliardi
+Date                   :=05/08/2019
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/mms/Documents/NewWorkspace/programming_learn/learn/BubbleSort/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Documentos/Pessoal/github/programming_learn/learn/BubbleSort/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 

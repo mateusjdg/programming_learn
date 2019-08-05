@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ BubbleSort - Debug ]----------"
-	@cd "BubbleSort" && "$(MAKE)" -f  "BubbleSort.mk"
+	@echo "----------Building project:[ LinkedList - Debug ]----------"
+	@cd "LinkedList" && "$(MAKE)" -f  "LinkedList.mk"
 clean:
-	@echo "----------Cleaning project:[ BubbleSort - Debug ]----------"
-	@cd "BubbleSort" && "$(MAKE)" -f  "BubbleSort.mk" clean
+	@echo "----------Cleaning project:[ LinkedList - Debug ]----------"
+	@cd "LinkedList" && "$(MAKE)" -f  "LinkedList.mk" clean
