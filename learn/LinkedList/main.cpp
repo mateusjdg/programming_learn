@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-
+/*
 class Node
 {
 public:
@@ -13,7 +13,7 @@ public:
 	
 	//methods
 };
-
+*/
 struct No 
 {
     int valor {0};

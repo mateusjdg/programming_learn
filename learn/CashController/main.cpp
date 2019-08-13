@@ -14,6 +14,14 @@ private:
     double prev_amount;
     bool overload_status;
     
+    /*
+    struct No 
+    {
+        int valor {0};
+        No *seguinte;
+    };
+    */
+    
 public:
 
     // methods
@@ -36,7 +44,10 @@ void AccountSection::SetCategoryName(string n) {
 }
 
 string AccountSection::GetCategoryName() {
-    return name;
+    if (category_name.empty())
+        return "\"categoria sem identificacao\"";
+    else
+        return category_name;
 }
 
 bool AccountSection::Deposit(double amount) {
@@ -68,9 +79,23 @@ int main() {
 
     AccountSection food;
     food.SetCategoryName("Alimentacao");
-    food.SetRealAmount(450.00);
+    food.SetRealAmount(450.12);
     
-    
+    cout << "Este e o total disponivel para " << food.GetCategoryName() << " agora: R$ " << food.GetRealAmount() << endl;
+    if (food.Deposit(2265.23))
+    {
+        cout << "Este e o total disponivel para " << food.GetCategoryName() << " agora: R$ " << food.GetRealAmount() << endl;
+    }
+    if (food.Withdraw(2000.00))
+    {
+        cout << "Retirada realizada com sucesso da categoria: " << food.GetCategoryName() << endl;
+        cout << "Total ainda disponivel para a categoria " << food.GetCategoryName() << ": " << food.GetRealAmount() << endl;
+    }
+    else
+    {
+        cout << "Impossivel realziar a retirada solicitada." << endl;
+    }
+        
     /*
     Account frank_account;
     frank_account.set_name("Frank's account");
