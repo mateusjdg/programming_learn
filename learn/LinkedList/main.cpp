@@ -3,6 +3,17 @@
 
 using namespace std;
 
+class Node
+{
+public:
+	
+	//atributes
+	int value;
+	Node *next;
+	
+	//methods
+};
+
 struct No 
 {
     int valor {0};

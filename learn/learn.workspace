@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="learn" Database="" Version="10.0.0">
   <Project Name="BubbleSort" Path="BubbleSort/BubbleSort.project" Active="No"/>
-  <Project Name="LinkedList" Path="LinkedList/LinkedList.project" Active="Yes"/>
+  <Project Name="LinkedList" Path="LinkedList/LinkedList.project" Active="No"/>
+  <Project Name="CashController" Path="CashController/CashController.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="BubbleSort" ConfigName="Debug"/>
       <Project Name="LinkedList" ConfigName="Debug"/>
+      <Project Name="CashController" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="BubbleSort" ConfigName="Release"/>
       <Project Name="LinkedList" ConfigName="Release"/>
+      <Project Name="CashController" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
